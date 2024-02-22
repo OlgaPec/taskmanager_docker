@@ -1,0 +1,299 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .buttons-container {
+    margin-top: 20px;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #A0A0A0/*#4CAF50*/;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  button:hover {
+    background-color:  #909090/*#45a049*/;
+  }
+  
+  .button-form {
+    display: inline-block;
+    margin-right: 10px;
+  }
+      /* Styly pro tlačítka */
+      .buttons-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;      
+        margin-bottom: 30px;
+  
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #A0A0A0/*#4CAF50*/;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        margin-right: 10px;
+        text-decoration: none;
+      }
+   /* Skryjeme formuláře na začátku */
+   .form-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+
+  }
+
+      /* Styly pro vstupní pole formulářů */
+      .form-container input {
+          display: block;
+    margin: 5px auto;
+    padding: 5px;
+    width: 200px;
+  }
+  
+  /* Styly pro nápisy formulářů */
+  .form-container label {
+    font-size: 16px;
+    display: block;
+  }
+
+  /* Stylování pro horní část stránky */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  /* Stylování tlačítka pro odhlášení */
+  .odhlaseni_button[type="button"] {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: none;
+    background-color: #774caf;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tasks-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  #task-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: block;
+margin: 5px auto;
+padding: 5px;
+width: 90%;
+  }
+
+  #task-input-pul  {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: inline-block;
+margin: 5px auto;
+padding: 5px;
+width: 42%;
+  }
+
+
+   /* Obecné styly pro tabulku */
+   table {
+    width: 100%;
+    max-width: 600px; /* Omezíme maximální šířku tabulky, aby nebyla příliš roztažená na velkých obrazovkách */
+    margin: 0 auto; /* Zarovná tabulku na střed stránky */
+    border-collapse: collapse; /* Sloučí hrany buněk do jedné čáry */
+  }
+
+  /* Styly pro záhlaví tabulky */
+  th {
+    background-color:  #c4c3c3;
+    color: #fff;
+    padding: 10px;
+    text-align: left; /* Zarovnat text v hlavičce doleva */
+    white-space: nowrap; /* Zabránit zalamování textu v hlavičce */
+    width: 20%; /* Pevná šířka buňky v hlavičce */
+  }
+
+  /* Střídavé pozadí řádků pro lepší čitelnost */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  /* Styly pro jednotlivé buňky tabulky */
+  td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 20%;
+    text-align: center;
+    overflow: hidden; /* Skryjeme přesahující text */
+  white-space: nowrap; /* Zakážeme zalamování textu */
+  text-overflow: ellipsis; /* Přidáme tří tečky pro označení, že text byl oříznut */
+  }
+
+  td:hover {
+    overflow: visible; /* Po najetí myší na buňku zobrazí celý obsah textu */
+    white-space: normal; /* Umožní zalomení textu */
+  }
+
+  .hidden-column {
+    display: none;
+  }
+
+.tuzka {
+  width: 15%;
+  height: 15%;
+}
+
+  /* Tlačítko pro smazání úkolu */
+  .tab_button[type="button"] {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: none;
+    background-color:#AF4C50;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .editable-cell {
+    border: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;
+    min-width: 150px; /* Změněná hodnota pro minimální šířku buňky */
+    max-width: 150px; 
+  }
+  
+  .editable-cell input {
+    border: none;
+    max-width: 90%; /* Ujistěte se, že šířka vstupu je 100% v rámci buňky */
+  }
+
+
+  .responsive-table {
+    width: 100%;
+  }
+  
+  @media (max-width: 710px) {
+  
+    .tasks-container {
+      display: block;
+    }
+    #task-input {
+      margin-right: 10px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* Pro zobrazení dat jako seznam na menších obrazovkách */
+    .responsive-table tr {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .responsive-table th
+    {
+      display:none;
+    }
+    .responsive-table td {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 5px;
+      text-align: left;
+    }
+  
+    .editable-cell {
+      min-width: 100%; /* Změněná hodnota pro minimální šířku buňky */
+      max-width: 100%; 
+    }
+    /* Tlačítko pro smazání úkolu zarovnáno doprava */
+    td button {
+      text-align: right;
+      display: block;
+      margin-left: auto;
+    }
+    td {
+      overflow: visible; /* Po najetí myší na buňku zobrazí celý obsah textu */
+      white-space: normal; /* Umožní zalomení textu */
+    }
+
+    .tuzka {
+      width: 5%;
+      height: 5%;
+    }
+
+    }
+  
+
+/* Styl pro vyskakovací okno */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Styl pro obsah vyskakovacího okna */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Styl pro tlačítko vyskakovacího okna */
+#accept-cookies-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
